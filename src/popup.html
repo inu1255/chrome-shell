@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <meta charset='UTF-8' />
     <title>弹幕</title>
     <link rel='stylesheet' href='styles/popup.css' />
-    <link rel='stylesheet' href='styles/antd.css' />
 </head>
+
 <body>
-    <div id='root'></div>
+    <div class="popup-content">
+        <div id='root'>
+            <span v-bind:title="message">
+                鼠标悬停几秒钟查看此处动态绑定的提示信息！
+            </span>
+        </div>
+    </div>
     <script src="scripts/popup.js"></script>
 </body>
+
 </html>

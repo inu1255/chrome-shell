@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang='en'>
+
 <head>
     <meta charset='UTF-8' />
     <title>弹幕</title>
     <link rel='stylesheet' href='styles/popup.css' />
-    <link rel='stylesheet' href='styles/antd.css' />
 </head>
+
 <body>
-    <div id='root'></div>
-    <script src="scripts/popup.js"></script>
+    <div class="popup-content">
+        <div id='root'>
+            <div v-if="page='edit'" class="page">
+                
+            </div>
+        </div>
+    </div>
+    <script src="scripts/options.js"></script>
 </body>
+
 </html>
